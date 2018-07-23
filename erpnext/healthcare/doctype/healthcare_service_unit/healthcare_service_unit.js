@@ -17,7 +17,6 @@ frappe.ui.form.on('Healthcare Service Unit', {
 	},
 	refresh: function(frm) {
 		frm.trigger("set_root_readonly");
-		frm.set_df_property("service_unit_type", "reqd", 1);
 		frm.add_custom_button(__("Healthcare Service Unit Tree"), function() {
 			frappe.set_route("Tree", "Healthcare Service Unit");
 		});
@@ -36,12 +35,8 @@ frappe.ui.form.on('Healthcare Service Unit', {
 		}
 	},
 	is_group: function(frm) {
-		if(frm.doc.is_group == 1){
+		if(frm.doc.is_group){
 			frm.set_value("allow_appointments", false);
-			frm.set_df_property("service_unit_type", "reqd", 0);
-		}
-		else{
-			frm.set_df_property("service_unit_type", "reqd", 1);
 		}
 	}
 });

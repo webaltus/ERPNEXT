@@ -38,11 +38,6 @@ def get_data():
 					"type": "doctype",
 					"name": "Clinical Procedure",
 					"label": _("Clinical Procedure"),
-				},
-				{
-					"type": "doctype",
-					"name": "Inpatient Record",
-					"label": _("Inpatient Record"),
 				}
 			]
 		},
@@ -172,11 +167,6 @@ def get_data():
 					"type": "doctype",
 					"name": "Clinical Procedure Template",
 					"label": _("Clinical Procedure Template"),
-				},
-				{
-					"type": "doctype",
-					"name": "Healthcare Service Unit Type",
-					"label": _("Healthcare Service Unit Type")
 				}
 			]
 		}

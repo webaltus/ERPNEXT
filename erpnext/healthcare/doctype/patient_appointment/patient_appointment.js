@@ -97,7 +97,6 @@ frappe.ui.form.on('Patient Appointment', {
 				},__("Create"));
 			}
 		}
-		frm.set_df_property("get_procedure_from_encounter", "read_only", frm.doc.__islocal ? 0 : 1);
 	},
 	check_availability: function(frm) {
 		var { practitioner, appointment_date } = frm.doc;
